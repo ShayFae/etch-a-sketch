@@ -1,0 +1,45 @@
+
+#container {
+  display: grid; 
+  color: black;
+  grid-template-columns: auto auto auto;
+  padding: 10px;  
+  grid-row-start: auto pink;
+} 
+
+#grid {
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  /*display: grid;
+  grid-template-columns: auto auto auto;*/
+  grid-row-start: auto pink;
+  background-color: gray;
+}
+
+.gridrow {
+  border: 1px, solid, black;
+}
+
+.cell {
+  border: 1px solid black;
+}
+
+#first {
+  grid-row-start: auto;
+  background-color: pink;
+}
+
+
+
+/*:root {
+    --grid-columns: 1;
+    --grid-rows: 1;
+}*/
+
+
+
+
+
+
