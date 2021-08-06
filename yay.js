@@ -29,10 +29,7 @@
                 return grid.appendChild(newGrid).className = "grid";
             };
         };
-            /*while(isNaN(newGrid) || newGrid < 0 || newGrid > 64) {
-            newGrid = parseInt(prompt('Input Value, max is 64'));
-            
-    }*/
+       
           makeGrid(newGrid);
         
         console.log(newGrid);
