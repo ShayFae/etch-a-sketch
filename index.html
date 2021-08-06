@@ -1,17 +1,58 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
     <html lan="en">
         <head>
             <meta charset="UFT-8">
             <title>Etch A Sketch</title>
             <link rel="stylesheet" href="style.css">
-            <script type="text/javascript" src="yay.js"></script>
+            <button id="erase" type="reset" onclick="erase()">ERASE</button>
+            <button id="resize" type="reset" onclick="reSize()">RESIZE</button>
         </head>
 
         <body>
-            <div id="grid"> Test 
-                
-            </div>
-
+          <div id="grid" onmouseover=>          
+          </div>
         </body>
+    </html> 
 
-    </html>
+    <script>
+        const grid = document.getElementById('grid');
+        function makeGrid() {      
+            for (g = 0; g < 256; g++) { 
+            let test = document.createElement('grid');
+            grid.appendChild(test).className = "grid";
+     };
+    };  
+
+        makeGrid(16,16);
+
+        function draw() {
+            let draw = "black"
+    }
+
+        function reSet() {
+            document.querySelectorAll(".grid").forEach((e) => e.parentNode.removeChild(e));
+        }
+
+        function erase() {
+            location.reload();
+        }
+
+        function reSize() {
+            reSet();
+        
+            let newGrid = parseInt(prompt("Enter Value", "0"));
+            if (newGrid = 1) newGrid < 64; newGrid++; {
+                return grid.appendChild(newGrid).className = "grid";
+            };
+        };
+            /*while(isNaN(newGrid) || newGrid < 0 || newGrid > 64) {
+            newGrid = parseInt(prompt('Input Value, max is 64'));
+            
+    }*/
+          makeGrid(newGrid);
+        
+        console.log(newGrid);
+
+    document.getElementById("grid").addEventListener("mouseover", draw)
+
+    </script>
