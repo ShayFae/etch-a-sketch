@@ -1,35 +1,40 @@
 #container {
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(100px auto);
-  border: #333 1px solid;
-  gap: 1px solid; 
-  text-align: center;
-} 
-
-#grid {
-  display: grid; 
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: minmax(100px auto);
-  border: #333 1px solid;
-  gap: 1px solid; 
-  /*border: 2px solid;
-  border-radius: 5px;*/
-  text-align: center;
-}
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px auto);
+    border: #333 1px solid;
+    gap: 1px solid; 
+    text-align: center;
+  } 
   
-.grid {
-  padding: 1em;
-  border: 1px solid #333;
-  text-align: center;
-}
-
-grid:hover, grid:focus {
-  background-color: gray;
-  transition: 0;
+  #grid {
+    display: grid; 
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: minmax(100px auto);
+    border: #333 1px solid;
+    gap: 1px solid;  
+    text-align: center;
+  }
+    
+  .grid {
+    padding: 1em;
+    border: 1px solid #333;
+    text-align: center;
+   
+    transition: 0s 180s;
+  }
   
-}
+  .grid:hover {
+    background-color: pink;
+    transition: 0s;
+  } 
+  
+ 
+  
+  #btn {
+    background-color: white;
+  } 
 
-
-
-
+  /*#erase {
+    background-color: white;
+  }*/
