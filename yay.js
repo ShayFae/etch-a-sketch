@@ -1,4 +1,4 @@
-  <script>
+<script>
         const grid = document.getElementById('grid');
         function makeGrid() {      
             for (g = 0; g < 256; g++) { 
@@ -10,7 +10,7 @@
         makeGrid(16,16);
 
         function draw() {
-            let draw = "black"
+            let draw = "black";
     }
 
         function reSet() {
@@ -20,20 +20,49 @@
         function erase() {
             location.reload();
         }
-
-        function reSize() {
-            reSet();
         
+        function reSize() {
+            reSet()
+            let nGrid = document.getElementById('grid');
             let newGrid = parseInt(prompt("Enter Value", "0"));
-            if (newGrid = 1) newGrid < 64; newGrid++; {
-                return grid.appendChild(newGrid).className = "grid";
-            };
-        };
-       
-          makeGrid(newGrid);
+            for(n = 0; n < newGrid; n++) {
+                let yes = document.createElement('grid');
+                return grid.appendChild(yes).className = "grid";
+            }
+        }
+        reSize(n);
         
         console.log(newGrid);
 
+
+
+        /*function reSize(newGrid) {
+            reSet();
+        
+            let newGrid = parseInt(prompt("Enter Value", "0"));
+            if(i = 1; i < 64; i++); {
+                return grid.appendChild(newGrid).className = "grid";
+            };
+        };
+            /*while(isNaN(newGrid) || newGrid < 0 || newGrid > 64) {
+            newGrid = parseInt(prompt('Input Value, max is 64'));
+            
+    }*/
+          
+
     document.getElementById("grid").addEventListener("mouseover", draw)
 
-    </script>
+    </script> 
+
+<!--function reSize() {
+    reSet()
+    let nGrid = document.getElementById('grid');
+    let newGrid = parseInt(prompt("Enter Value", "0"));
+    for(n = newGrid; n < 256; newGrid++) {
+        let yes = document.createElement('grid');
+        return grid.appendChild(yes).className = "grid";
+    }
+}
+makeGrid(newGrid);
+
+console.log(newGrid);-->
