@@ -1,4 +1,3 @@
-/*REWORK ADD EVENTTARGET.EVENTLISTNERS*/
 const grid = document.getElementById('grid');
 function makeGrid() {      
     for (g = 0; g < 256; g++) { 
@@ -31,22 +30,9 @@ function reSize() {
     }
 }
 
-document.getElementById("grid").addEventListener("mouseover", draw);
+document.getElementById("grid").addEventListener("mouseover", draw); 
 
-
-
-/*function reSize() {
-reSet()
-let nGrid = document.getElementById('grid');
-let newGrid = parseInt(prompt("Enter Value", "0"));
-for(n = newGrid; n < 256; newGrid++) {
-let yes = document.createElement('grid');
-return grid.appendChild(yes).className = "grid";
-}
-}
-makeGrid(newGrid);
-
-console.log(newGrid);*/ 
+/*add an EventListener target that interacts with the div grid and reverts its color back*/
 
 
 /*function reSize(newGrid) {
