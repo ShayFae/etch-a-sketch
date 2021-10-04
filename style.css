@@ -1,3 +1,5 @@
+/*Make container hold reSize value on click instead of grid ID*/
+
 /*#container {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
@@ -7,19 +9,15 @@
     text-align: center;
   }*/
 
-  .btn{
-    display: flex;
-    justify-content: center;
-   
-  } 
+  button  { 
+    padding: 30px;
+    margin: 0 1rem;
+  }
   
   #grid {
     display: grid; 
     grid-template-columns: repeat(16, 50px);
     justify-content: center;
-    padding: 100px;
-    
-   
   }
     
   .grid {
@@ -33,9 +31,55 @@
     background-color: pink;
     transition: 0s;
   } 
-  
- 
-  
+
+  .wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  } 
+
+ /* Responsive grid */
+  /* @media screen and (min-width:750px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        line-height: 1;
+    }
+
+    .contact-list a {
+        padding: 5px;
+    }
+     
+}
+
+  */
  
 
   /*#erase {
